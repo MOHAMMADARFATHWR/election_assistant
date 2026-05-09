@@ -26,10 +26,10 @@ const timelineNodes = [
 ];
 
 const evmCards = [
-  { id: 1, title: "The Control Unit", desc: "Kept with the Polling Officer. It controls the ballot unit and ensures only one vote is cast per person.", icon: "🎛️" },
-  { id: 2, title: "The Ballot Unit", desc: "This is where you vote! Press the blue button next to your chosen candidate's name and symbol.", icon: "🗳️" },
-  { id: 3, title: "VVPAT Machine", desc: "Voter Verifiable Paper Audit Trail. It prints a slip showing your vote for 7 seconds so you can verify it.", icon: "🧾" },
-  { id: 4, title: "Sealing & Security", desc: "After voting ends, machines are sealed in front of political party agents and taken to strong rooms.", icon: "🔒" }
+  { id: 1, title: "The Control Unit", desc: "Kept with the Polling Officer. It controls the ballot unit and ensures only one vote is cast per person.", image: "/images/control_unit.jpg" },
+  { id: 2, title: "The Ballot Unit", desc: "This is where you vote! Press the blue button next to your chosen candidate's name and symbol.", image: "/images/ballot_unit.jpg" },
+  { id: 3, title: "VVPAT Machine", desc: "Voter Verifiable Paper Audit Trail. It prints a slip showing your vote for 7 seconds so you can verify it.", image: "/images/vvpat.jpg" },
+  { id: 4, title: "Sealing & Security", desc: "After voting ends, machines are sealed in front of political party agents and taken to strong rooms.", image: "/images/sealing_security.png" }
 ];
 
 // --- MOCK API ---
@@ -392,7 +392,9 @@ const EVMExplainerModule = () => {
       </div>
       <div className="evm-deck">
         <div className="evm-card">
-          <div className="evm-card-icon">{evmCards[currentIdx].icon}</div>
+          <div className="evm-card-image-wrapper">
+            <img src={evmCards[currentIdx].image} alt={evmCards[currentIdx].title} className="evm-card-image" />
+          </div>
           <h3>{evmCards[currentIdx].title}</h3>
           <p>{evmCards[currentIdx].desc}</p>
         </div>
