@@ -39,15 +39,17 @@ An interactive, AI-driven Election Guide Assistant built with React. This applic
 
 ## 📸 Screenshots
 
-*(You can replace these placeholders with actual screenshots of your application)*
-
-| Dashboard | AI Chat |
+| Dashboard | AI Chatbot |
 | :---: | :---: |
-| ![Dashboard](https://via.placeholder.com/600x400.png?text=Upcoming+Elections+Dashboard) | ![Chat Interface](https://via.placeholder.com/600x400.png?text=Interactive+AI+Chat) |
+| ![Dashboard](/public/images/dashboard.png) | ![Chat Interface](/public/images/chatbot.png) |
 
-| Timeline | Open Data |
+| Voting Journey | Timeline |
 | :---: | :---: |
-| ![Timeline](https://via.placeholder.com/600x400.png?text=Election+Timeline+View) | ![Open Data](https://via.placeholder.com/600x400.png?text=Open+Election+Data+Sources) |
+| ![Voting Journey](/public/images/voting_journey.png) | ![Timeline View](/public/images/timeline.png) |
+
+| EVM Explainer | Video Tutorials |
+| :---: | :---: |
+| ![EVM Explainer](/public/images/EVM_explainer.png) | ![Video Tutorials](/public/images/video%20tutorials.png) |
 
 ## 🛠️ Technology Stack
 - React (Vite)
